@@ -3,10 +3,13 @@ function displayMessage() {
   alert("Hello, GitHub!");
 }
 
-// Create a button element
-const button = document.createElement("button");
-button.textContent = "Click me!";
-button.addEventListener("click", displayMessage);
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function() {
+  // Create a button element
+  const button = document.createElement("button");
+  button.textContent = "Click me!";
+  button.addEventListener("click", displayMessage);
 
-// Append the button to the body of the page
-document.body.appendChild(button);
+  // Append the button to the body of the page
+  document.body.appendChild(button);
+});
